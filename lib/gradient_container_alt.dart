@@ -6,10 +6,11 @@ var endAligment = Alignment.bottomRight;
 
 int? testNumber;
 
-class GradientContainer extends StatelessWidget {
-  const GradientContainer({super.key, required this.colors});
+class GradientContainerAlt extends StatelessWidget {
+  const GradientContainerAlt(this.color1, this.color2, {super.key});
 
-  final List<Color> colors;
+  final Color color1;
+  final Color color2;
 
   @override
   Widget build(context) {
@@ -19,12 +20,12 @@ class GradientContainer extends StatelessWidget {
       height: 500, //MediaQuery.sizeOf(context).height * 0.5,
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: colors,
+          colors: [color1, color2],
           begin: beginAlignment,
           end: endAligment,
         ),
       ),
-      child: const Center(child: TextStyled("hello", Colors.white70)),
+      child: const Center(child: TextStyled("hello alt", Colors.white70)),
     );
   }
 }
