@@ -12,10 +12,13 @@ void main() {
           child: const SingleChildScrollView(
             child: Column(
               children: [
-                GradientContainer(colors: [
-                  Color.fromARGB(255, 26, 2, 80),
-                  Color.fromARGB(255, 45, 7, 90)
-                ]),
+                GradientContainer(
+                    colors: [
+                      Color.fromARGB(255, 26, 2, 80),
+                      Color.fromARGB(255, 45, 7, 90)
+                    ],
+                    Color.fromARGB(137, 222, 118, 118),
+                    Color.fromARGB(137, 222, 118, 118)),
                 GradientContainerAlt(Color.fromARGB(137, 222, 118, 118),
                     Color.fromARGB(137, 89, 83, 83))
               ],

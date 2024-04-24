@@ -17,7 +17,7 @@ class GradientContainerAlt extends StatelessWidget {
     testNumber = 12;
     return Container(
       width: MediaQuery.sizeOf(context).width * 0.5,
-      height: 500, //MediaQuery.sizeOf(context).height * 0.5,
+      height: MediaQuery.sizeOf(context).height * 1,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [color1, color2],
