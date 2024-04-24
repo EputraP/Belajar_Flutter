@@ -9,17 +9,17 @@ void main() {
         backgroundColor: const Color.fromARGB(255, 155, 144, 165),
         body: Container(
           alignment: Alignment.center,
-          child: const SingleChildScrollView(
+          child: SingleChildScrollView(
             child: Column(
               children: [
                 GradientContainer(
-                    colors: [
+                    colors: const [
                       Color.fromARGB(255, 26, 2, 80),
                       Color.fromARGB(255, 45, 7, 90)
                     ],
-                    Color.fromARGB(137, 222, 118, 118),
-                    Color.fromARGB(137, 222, 118, 118)),
-                GradientContainerAlt(Color.fromARGB(137, 222, 118, 118),
+                    const Color.fromARGB(137, 222, 118, 118),
+                    const Color.fromARGB(137, 222, 118, 118)),
+                const GradientContainerAlt(Color.fromARGB(137, 222, 118, 118),
                     Color.fromARGB(137, 89, 83, 83))
               ],
             ),
